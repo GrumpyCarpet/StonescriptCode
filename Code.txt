@@ -1,0 +1,16 @@
+>`0,6,Import successful
+
+
+var scarfColor
+scarfColor = #red
+var interval = 3
+var total_sprites = 4
+var total_time = total_sprites * interval
+ ?time % total_time < interval
+   >h-3,1,@scarfColor@,_..
+ :?time % total_time < interval * 2
+   >h-3,1,@scarfColor@,.-.
+ :?time % total_time < interval * 3
+   >h-3,1,@scarfColor@,-._
+ :?time % total_time < interval * 4
+   >h-3,1,@scarfColor@,._.
