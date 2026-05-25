@@ -1,6 +1,27 @@
 >`0,6,Import successful
 
 
+disable banner
+
+/* Functions */
+func PickUp(dist)
+  ?pickup.distance < dist
+    equipR star
+    equipL tri
+func ActivateItem(item_name,item)
+  ?item.CanActivate(item_name)
+    equipR item
+    activate R
+func Summons(item)
+  ?summon.count <= 0 & item.CanActivate()
+    equipR item
+    activate R
+
+
+
+
+
+// Scarf Animation
 var scarfColor
 scarfColor = #red
 var interval = 3
