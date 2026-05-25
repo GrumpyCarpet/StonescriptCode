@@ -1,0 +1,16 @@
+?loc = Rocky Plateau
+  PickUp(20)
+  disable npcDialog
+  ?foe ! boss | foe.distance > 10
+    equipR comp
+    equipL tri
+  ActivateSummon(fire_talisman)
+  ActivateSummon(aether_talisman)
+// Acronian Scout
+  ?foe.name = "Acronian Scout" & foe.distance <= 10
+    equipR bardiche
+    ActivateSummon(bardiche)
+// Disangelos (1)
+  ?foe.name = "Dysangelos, Bearer of Stones" & foe.distance <= 10
+    
+
